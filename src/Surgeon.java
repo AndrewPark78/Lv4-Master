@@ -6,9 +6,14 @@ public class Surgeon extends Doctor {
 	}
 
 	public void doMedicine() {
-		// TODO Auto-generated method stub
-		for(Patient p: pats2){
-			p.isCared = true;
+		if (!isEvil()) {
+			for (Patient p : pats2) {
+				p.isCared = true;
+			}
+		} else {
+			for (Patient pa : pats2) {
+				pa.kill();
+			}
 		}
 	}
 }

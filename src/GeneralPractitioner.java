@@ -5,9 +5,14 @@ public class GeneralPractitioner extends Doctor {
 		return true;
 	}
 	public void doMedicine() {
-		for(Patient p: pats2){
-			p.isCared = true;
+		if (!isEvil()) {
+			for (Patient p : pats2) {
+				p.isCared = true;
+			}
+		} else {
+			for (Patient pa : pats2) {
+				pa.kill();
+			}
 		}
-		
 	}
 }
