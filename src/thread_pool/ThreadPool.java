@@ -1,13 +1,16 @@
 package thread_pool;
 
+import java.util.ArrayDeque;
+
 public class ThreadPool {
-int i;
-	public ThreadPool(int i) {
-		this.i = i;
+int totalThread;
+	public ThreadPool(int totalThread) {
+		this.totalThread = totalThread;
 	}
-	public void addTask(Object object) {
+	ArrayDeque taskQueue = new ArrayDeque();
+	public void addTask(Task task) {
 		// TODO Auto-generated method stub
-		
+		taskQueue.add(task);
 	}
 	public void start() {
 		// TODO Auto-generated method stub
