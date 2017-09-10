@@ -9,9 +9,6 @@
 /Hospital.class
 /HospitalTest.class
 /Journal/
-/Servers/
-/thread_pool/
-/threads/
 /KanyeWest.class
 /LinkedListInterface.class
 /ListTest.class
@@ -21,6 +18,9 @@
 /PokerHand.class
 /PokerHandTest.class
 /SIckBeats.class
+/Servers/
 /SmallPrimes.class
 /Surgeon.class
 /Zombie.class
+/thread_pool/
+/threads/
